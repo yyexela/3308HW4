@@ -1,0 +1,73 @@
+#body-flexbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 75%;
+}
+
+#body-flexbox-full{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #66ccff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#flickr-btn{
+  margin-left: 10px;
+}
+
+#image-cnt{
+  margin-right: 10px;
+}
+
+#flickr-div{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flickr-div > div{
+  width: 200px;
+}
+
+#github-link{
+    margin-bottom: 1.5em;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+body {
+  font: Calibri;
+}
+
+#cards-flexbox{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#interests-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#form{
+  width: 100%;
+  justify-content: left;
+}
+
+.interest-div{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

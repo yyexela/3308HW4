@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style_bootstrap.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+        <!-- Used for debounce function -->
+        <script src="https://cdn.jsdelivr.net/npm/underscore@1.11.0/underscore-min.js"></script>
+
+        <script src="script.js"></script> 
+
+        <title>About Me</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../mypage_bootstrap.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../signup-modal/login.html">Sign Up Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../tic-tac-toe/tic-tac-toe.html">Tic Tac Toe Game</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Flickr</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="https://github.com/yyexela/"><img src="../assets/GitHub.svg" alt="Github Logo" style="width:40px;"></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container" id="body-flexbox">
+            <div id="body-flexbox-full">
+                <form>
+                    <label for="image-cnt">Number of photos: </label>
+                    <select name="image-cnt" id="image-cnt">
+                        <option value="30" selected>30</option>
+                        <option value="50">50</option>
+                        <option value="70">70</option>
+                    </select>
+                    <label for="image-tag">Tags: </label>
+                    <input type="text" name="image-tag" id="image-tag"></input>
+                </form>
+                <button type="button" id="flickr-btn" onclick="makeApiCall()">Submit</button>
+            </div>
+        </div>
+
+        <div id="flickr-div">
+            <!-- Sample card from Flickr
+            <div class="card">
+                <img class="card-img-top" src="https://live.staticflickr.com/65535/50568071087_0b65c46e93_s.jpg" alt="Flickr Image">
+                <div class="card-body">
+                    <h5 class="card-title" style="text-align: center; font-size: 18px;">Image Title</h5>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item">
+                    <a href="https://linkedin.com/in/yyexela"><img src="../assets/LinkedIn.png" alt="LinkedIn Logo" style="width:40px;"></a>
+                </li>
+            </ul>
+        </nav>
+
+    </body>
+</html>
