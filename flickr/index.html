@@ -50,16 +50,14 @@
 
         <div class="container" id="body-flexbox">
             <div id="body-flexbox-full">
-                <form>
-                    <label for="image-cnt">Number of photos: </label>
-                    <select name="image-cnt" id="image-cnt">
-                        <option value="30" selected>30</option>
-                        <option value="50">50</option>
-                        <option value="70">70</option>
-                    </select>
-                    <label for="image-tag">Tags: </label>
-                    <input type="text" name="image-tag" id="image-tag"></input>
-                </form>
+                <label for="image-cnt">Number of photos: </label>
+                <select name="image-cnt" id="image-cnt">
+                    <option value="30" selected>30</option>
+                    <option value="50">50</option>
+                    <option value="70">70</option>
+                </select>
+                <label for="image-tag">Tags: </label>
+                <input type="text" name="image-tag" id="image-tag"></input>
                 <button type="button" id="flickr-btn" onclick="makeApiCall()">Submit</button>
             </div>
         </div>
